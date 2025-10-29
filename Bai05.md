@@ -10,19 +10,17 @@
 |                 | applyDiscount(double percent)   | Giảm giá sách theo phần trăm (%)                                |
 |                 | isAvailable()                  | Kiểm tra xem sách còn hàng hay không                            |
 
-```plantuml
-@startuml
-class Book {
+
+Book 
+----------------------
   - bookID : String
   - title : String
   - author : String
   - price : double
   - quantity : int
-
+----------------------------
   + displayInfo() : void
   + updateQuantity(newQuantity : int) : void
   + applyDiscount(percent : double) : void
   + isAvailable() : boolean
-}
-@enduml
 
